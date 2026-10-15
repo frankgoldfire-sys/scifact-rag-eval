@@ -1,0 +1,7 @@
+﻿condition,gold_document_hit,claim_count,correct_count,error_count,accuracy,nei_prediction_count
+retrieved_bm25,True,166,146,20,0.8795180722891566,11
+retrieved_bm25,False,22,9,13,0.4090909090909091,12
+retrieved_dense,True,171,152,19,0.8888888888888888,9
+retrieved_dense,False,17,9,8,0.5294117647058824,8
+retrieved_hybrid,True,173,153,20,0.884393063583815,9
+retrieved_hybrid,False,15,8,7,0.5333333333333333,7

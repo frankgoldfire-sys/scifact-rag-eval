@@ -1,0 +1,75 @@
+{
+  "retrieval_method": "bm25",
+  "split": "train",
+  "all_claims": 809,
+  "evaluated_claims": 505,
+  "excluded_nei_claims": 304,
+  "category_definition": {
+    "top_1_success": "第一篇金标准文档排名为1",
+    "top_5_recovery": "第一篇金标准文档排名为2至5",
+    "top_20_near_miss": "第一篇金标准文档排名为6至20",
+    "hard_failure_after_20": "第一篇金标准文档排名大于20"
+  },
+  "overall_categories": {
+    "top_1_success": {
+      "count": 358,
+      "rate": 0.7089108910891089
+    },
+    "top_5_recovery": {
+      "count": 95,
+      "rate": 0.18811881188118812
+    },
+    "top_20_near_miss": {
+      "count": 23,
+      "rate": 0.04554455445544554
+    },
+    "hard_failure_after_20": {
+      "count": 29,
+      "rate": 0.05742574257425743
+    }
+  },
+  "categories_by_label": {
+    "CONTRADICT": {
+      "total": 173,
+      "categories": {
+        "top_1_success": {
+          "count": 128,
+          "rate_within_label": 0.7398843930635838
+        },
+        "top_5_recovery": {
+          "count": 31,
+          "rate_within_label": 0.1791907514450867
+        },
+        "top_20_near_miss": {
+          "count": 4,
+          "rate_within_label": 0.023121387283236993
+        },
+        "hard_failure_after_20": {
+          "count": 10,
+          "rate_within_label": 0.057803468208092484
+        }
+      }
+    },
+    "SUPPORT": {
+      "total": 332,
+      "categories": {
+        "top_1_success": {
+          "count": 230,
+          "rate_within_label": 0.6927710843373494
+        },
+        "top_5_recovery": {
+          "count": 64,
+          "rate_within_label": 0.1927710843373494
+        },
+        "top_20_near_miss": {
+          "count": 19,
+          "rate_within_label": 0.0572289156626506
+        },
+        "hard_failure_after_20": {
+          "count": 19,
+          "rate_within_label": 0.0572289156626506
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,75 @@
+{
+  "generated_at_utc": "2026-10-13T13:19:46.720193+00:00",
+  "claim_count": 300,
+  "focus_case_count": 72,
+  "dense_label_disagreement_count": 63,
+  "group_counts": {
+    "gold_hit_correct": 152,
+    "gold_hit_wrong": 19,
+    "gold_miss_wrong": 8,
+    "gold_miss_correct": 9,
+    "nei_wrong": 36,
+    "nei_correct": 76
+  },
+  "oracle_correct_dense_miss_wrong_candidate_ids": [
+    70,
+    212,
+    239,
+    619,
+    1221
+  ],
+  "api_error_events": 3,
+  "citation_diagnostics": {
+    "oracle_cited": {
+      "claim_count": 300,
+      "self_reported_provided_evidence_count": 192,
+      "with_valid_nonempty_citations": 192,
+      "complete_gold_rationale_count": 161,
+      "complete_gold_rationale_but_label_disagreement_count": 7
+    },
+    "retrieved_bm25": {
+      "claim_count": 300,
+      "self_reported_provided_evidence_count": 190,
+      "with_valid_nonempty_citations": 190,
+      "complete_gold_rationale_count": 147,
+      "complete_gold_rationale_but_label_disagreement_count": 5
+    },
+    "retrieved_dense": {
+      "claim_count": 300,
+      "self_reported_provided_evidence_count": 199,
+      "with_valid_nonempty_citations": 199,
+      "complete_gold_rationale_count": 152,
+      "complete_gold_rationale_but_label_disagreement_count": 6
+    },
+    "retrieved_hybrid": {
+      "claim_count": 300,
+      "self_reported_provided_evidence_count": 198,
+      "with_valid_nonempty_citations": 198,
+      "complete_gold_rationale_count": 153,
+      "complete_gold_rationale_but_label_disagreement_count": 7
+    },
+    "no_evidence": {
+      "claim_count": 300,
+      "self_reported_provided_evidence_count": 0,
+      "with_valid_nonempty_citations": 0,
+      "complete_gold_rationale_count": 0,
+      "complete_gold_rationale_but_label_disagreement_count": 0
+    },
+    "distractor_dense": {
+      "claim_count": 300,
+      "self_reported_provided_evidence_count": 65,
+      "with_valid_nonempty_citations": 65,
+      "complete_gold_rationale_count": 0,
+      "complete_gold_rationale_but_label_disagreement_count": 0
+    }
+  },
+  "limitations": [
+    "Annotation matching is not semantic citation correctness.",
+    "Non-gold documents may contain unannotated useful evidence.",
+    "Oracle label agreement does not guarantee a scientifically correct answer.",
+    "Conditional groups do not establish causal error propagation.",
+    "Review examples prioritize selected groups; not a random citation-quality sample."
+  ],
+  "source_responses": "D:\\自己的小东西\\scifact-rag-eval\\results\\llm\\dev_all_k5_seed20261013_f2227ecf8839_responses.jsonl",
+  "source_evaluation": "D:\\自己的小东西\\scifact-rag-eval\\data\\prepared\\dev_all_k5_seed20261013_evaluation.jsonl"
+}

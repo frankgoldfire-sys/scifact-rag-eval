@@ -1,0 +1,45 @@
+# Python虚拟环境
+.venv/
+
+# Python缓存
+__pycache__/
+*.py[cod]
+
+# 密钥和本地环境变量
+.env
+
+# 编辑器配置
+.vscode/
+
+# 原始数据和处理后数据
+data/raw/
+data/processed/
+
+# 下载临时目录
+_download/
+
+# 模型、向量和缓存
+cache/
+models/
+*.npy
+*.npz
+*.pt
+*.pth
+*.index
+
+# 临时文件
+*.tmp
+*.log
+
+# 环境变量的其他本地副本
+.env.*
+!.env.example
+
+# 含大量论文摘要、可重新生成的请求文件
+data/prepared/*_requests.jsonl
+
+# 可重新生成的检索排名
+results/*_rankings.jsonl
+
+# 含完整摘要的批量案例材料
+results/error_analysis/*_dense_cases.jsonl

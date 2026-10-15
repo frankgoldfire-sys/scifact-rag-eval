@@ -1,0 +1,121 @@
+{
+  "run_name": "train_pilot_per_label10_k5_seed20261013",
+  "generated_at_utc": "2026-10-13T09:10:54.372910+00:00",
+  "prompt_version": "evidence_assisted_v1",
+  "split": "train",
+  "sampling": "pilot_per_label10",
+  "seed": 20261013,
+  "top_k": 5,
+  "selected_claim_ids": [
+    58,
+    66,
+    119,
+    156,
+    220,
+    245,
+    285,
+    313,
+    337,
+    390,
+    418,
+    444,
+    479,
+    481,
+    504,
+    550,
+    746,
+    933,
+    1005,
+    1031,
+    1052,
+    1156,
+    1168,
+    1205,
+    1237,
+    1238,
+    1246,
+    1334,
+    1348,
+    1361
+  ],
+  "label_distribution": {
+    "CONTRADICT": 10,
+    "NOT_ENOUGH_INFO": 10,
+    "SUPPORT": 10
+  },
+  "claim_count": 30,
+  "request_count": 180,
+  "conditions": [
+    "oracle_cited",
+    "retrieved_bm25",
+    "retrieved_dense",
+    "retrieved_hybrid",
+    "no_evidence",
+    "distractor_dense"
+  ],
+  "oracle_definition": "all source cited documents, complete abstracts",
+  "distractor_definition": "dense top-k after excluding source cited and annotated gold documents; not guaranteed irrelevant or misleading",
+  "knowledge_policy": "existing model knowledge allowed in every condition",
+  "abstract_policy": "complete abstracts; no sentence selection or truncation",
+  "dense_distractor_identical_claims": 3,
+  "condition_summaries": {
+    "oracle_cited": {
+      "requests": 30,
+      "average_input_characters": 4437.833333333333,
+      "maximum_input_characters": 6529,
+      "average_gold_document_recall": 1.0
+    },
+    "retrieved_bm25": {
+      "requests": 30,
+      "average_input_characters": 13731.333333333334,
+      "maximum_input_characters": 19851,
+      "average_gold_document_recall": 0.8916666666666666
+    },
+    "retrieved_dense": {
+      "requests": 30,
+      "average_input_characters": 13916.366666666667,
+      "maximum_input_characters": 19949,
+      "average_gold_document_recall": 1.0
+    },
+    "retrieved_hybrid": {
+      "requests": 30,
+      "average_input_characters": 13844.533333333333,
+      "maximum_input_characters": 20952,
+      "average_gold_document_recall": 0.925
+    },
+    "no_evidence": {
+      "requests": 30,
+      "average_input_characters": 1511.6333333333334,
+      "maximum_input_characters": 1581,
+      "average_gold_document_recall": 0.0
+    },
+    "distractor_dense": {
+      "requests": 30,
+      "average_input_characters": 13916.566666666668,
+      "maximum_input_characters": 20996,
+      "average_gold_document_recall": 0.0
+    }
+  },
+  "inputs": {
+    "corpus": {
+      "path": "D:\\自己的小东西\\scifact-rag-eval\\data\\raw\\corpus.jsonl",
+      "sha256": "b8d6c89624cb2ed74dee8938effc4f5d8bd2086887880af8110d64be4ceade62"
+    },
+    "claims": {
+      "path": "D:\\自己的小东西\\scifact-rag-eval\\data\\raw\\claims_train.jsonl",
+      "sha256": "f4c8fa82d8bd0653a9cc8d61a6ea48c25eacea64e90af5dbf390ebb1b74372f0"
+    },
+    "bm25": {
+      "path": "D:\\自己的小东西\\scifact-rag-eval\\results\\bm25_train_rankings.jsonl",
+      "sha256": "c873e5624bdd676fd87cda5c68b9327d26426cd090d7d913110eafb52e053b5d"
+    },
+    "dense": {
+      "path": "D:\\自己的小东西\\scifact-rag-eval\\results\\dense_train_rankings.jsonl",
+      "sha256": "1a86106937b2095e76fc3497f654944e51f5768935be4c119c4473fbb2411b8c"
+    },
+    "hybrid": {
+      "path": "D:\\自己的小东西\\scifact-rag-eval\\results\\hybrid_train_rankings.jsonl",
+      "sha256": "8376879537caf1024bc07ba5d5e408ff6c6beea5a0d5a539de744e3e67736da1"
+    }
+  }
+}
